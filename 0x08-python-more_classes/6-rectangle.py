@@ -5,7 +5,8 @@ a class that defines a Rectangle
 
 
 class Rectangle:
-"""Representation of Rectangle class"""
+    """Representation of a rectangle class"""
+
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
@@ -33,6 +34,7 @@ class Rectangle:
 
     @property
     def height(self):
+        """getter for the private instance attribute height"""
         return self.__height
 
     @height.setter
@@ -48,13 +50,13 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-        """returns the perimeter"""
+        """returns the perimeter of the rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """returns printable string representation"""
+        """returns printable string representation of the rectangle"""
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
@@ -62,5 +64,5 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        """returns a string representation"""
+        """returns a string representation of the rectangle"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
