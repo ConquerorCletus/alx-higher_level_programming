@@ -6,7 +6,7 @@ how to use the special `__str__` and `__repr__` methods.
 
 ## Tests :heavy_check_mark:
 
-* [Tests](./tests): Folder of test files. Provided by ALX.
+* [Tests](./main): Folder of test files. Provided by ALX.
 
 ## Tasks :page_with_curl:
 
