@@ -6,6 +6,12 @@ in a list of unsorted integers.
 
 
 def find_peak(list_of_integers):
+    """
+    Finds peak function
+    Args:
+        list_of_integers: list of integer to get peak from.
+    Return: peak of list_of_integers.
+    """
     if not list_of_integers:
         return None
 
